@@ -1,0 +1,28 @@
+#	####################################################
+#	СИНТАКСИЧЕСКАЯ РАСКРАСКА ДЛЯ БИБИЛИОТЕКИ:
+#	iarduino_4LED
+#	####################################################
+#	ТИПЫ ДАННЫХ:							   (KEYWORD1)
+	iarduino_4LED	KEYWORD1
+#	####################################################
+#	МЕТОДЫ И ФУНКЦИИ:						   (KEYWORD2)
+	begin	KEYWORD2
+	clear	KEYWORD2
+	light	KEYWORD2
+	point	KEYWORD2
+	print	KEYWORD2
+	setLED	KEYWORD2
+#	####################################################
+#	КОНСТАНТЫ:								   (LITERAL1)
+	LEN1	LITERAL1
+	LEN2	LITERAL1
+	LEN3	LITERAL1
+	LEN4	LITERAL1
+	TIME	LITERAL1
+	TEMP	LITERAL1
+	LEFT	LITERAL1
+	RIGHT	LITERAL1
+	POS1	LITERAL1
+	POS2	LITERAL1
+	POS3	LITERAL1
+	POS4	LITERAL1
