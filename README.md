@@ -11,7 +11,7 @@
 
 ## Описание библиотеки:
 Библиотека позволяет регулировать яркость свечения LED индикатора, выводить на него числа (целые, дробные, положительные, отрицательные), символы ("abcdefghijlnopstu .,:;*-_"), массивы чисел, время и температуру.
-**[ dsgdfgsgdfsgdf  ](https://wiki.iarduino.ru/img/resources/792/792.svg)**
+**[  Подробное описание, подключение и примеры работы ](https://wiki.iarduino.ru/page/chetyrehrazryadnyy-indikator-trema-modul/)**
 
 ## Назначение функций и переменных:
 Подробное описание работы с библиотекой, находится в разделе [Wiki Четырёхразрядный индикатор](https://wiki.iarduino.ru/page/chetyrehrazryadnyy-indikator-trema-modul/ "Wiki Четырёхразрядный индикатор").
@@ -48,5 +48,5 @@
 
     Функция setLED( [[[[[ БАЙТ_№1 ] , БАЙТ_№2 ] , БАЙТ_№3 ] , БАЙТ_№4 ] , ФЛАГ ] ); // Устанавливает светодиоды (сегменты) индикатора по битам.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNzI5NTQyNSwxNTYwNTE1NzM2XX0=
+eyJoaXN0b3J5IjpbLTIzODk4MTcyXX0=
 -->
