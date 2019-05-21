@@ -1,5 +1,5 @@
 
-[![](https://iarduino.ru/img/logo.svg)](https://iarduino.ru) [![](https://iarduino.ru/img/logo.svg)](https://iarduino.ru)
+[![](https://iarduino.ru/img/logo.svg)](https://iarduino.ru) [![](https://wiki.iarduino.ru/img/git-shop.svg)](https://iarduino.ru)
 
 
 
@@ -52,5 +52,5 @@
 
     Функция setLED( [[[[[ БАЙТ_№1 ] , БАЙТ_№2 ] , БАЙТ_№3 ] , БАЙТ_№4 ] , ФЛАГ ] ); // Устанавливает светодиоды (сегменты) индикатора по битам.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NjkwMzUwOCwtNTI1NzYwNTg1XX0=
+eyJoaXN0b3J5IjpbLTIxMzA5MTk4NjRdfQ==
 -->
