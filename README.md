@@ -1,10 +1,12 @@
 # iarduino_4LED
 Библиотека iarduino_4LED для работы с четырёхразрядным индикатором
-| Модель  |  Харктеристики |
-|  | ------------ |
-|   |   |
-|   |   |
-[![](https://wiki.iarduino.ru/img/resources/702/702.svg)](https://wiki.iarduino.ru/page/chetyrehrazryadnyy-indikator-trema-modul/)
+
+| Модель | Ссылка на магазин|
+|--|--|
+| Красная ![enter image description here](https://wiki.iarduino.ru/img/resources/702/702.svg) | https://iarduino.ru/shop/Displei/chetyrehrazryadnyy-indikator-led-trema-modul.html|
+| Зеленый![enter image description here](https://wiki.iarduino.ru/img/resources/883/883.svg) | https://iarduino.ru/shop/Displei/chetyrehrazryadnyy-indikator-led-zelenyy-trema-modul.html |
+| Синий ![enter image description here](https://wiki.iarduino.ru/img/resources/884/884.svg) | https://iarduino.ru/shop/Displei/chetyrehrazryadnyy-indikator-led-siniy-trema-modul.html |
+
 
 ## Описание библиотеки:
 Библиотека позволяет регулировать яркость свечения LED индикатора, выводить на него числа (целые, дробные, положительные, отрицательные), символы ("abcdefghijlnopstu .,:;*-_"), массивы чисел, время и температуру.
