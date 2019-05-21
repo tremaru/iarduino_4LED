@@ -1,4 +1,5 @@
 
+![enter image description here](https://iarduino.ru/img/logo.svg)
 # iarduino_4LED
 Библиотека iarduino_4LED для работы с четырёхразрядным индикатором
 
@@ -48,5 +49,5 @@
 
     Функция setLED( [[[[[ БАЙТ_№1 ] , БАЙТ_№2 ] , БАЙТ_№3 ] , БАЙТ_№4 ] , ФЛАГ ] ); // Устанавливает светодиоды (сегменты) индикатора по битам.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzODk4MTcyXX0=
+eyJoaXN0b3J5IjpbNDIzNTM0OTc2LC0yMzg5ODE3Ml19
 -->
