@@ -50,5 +50,5 @@
 
     Функция setLED( [[[[[ БАЙТ_№1 ] , БАЙТ_№2 ] , БАЙТ_№3 ] , БАЙТ_№4 ] , ФЛАГ ] ); // Устанавливает светодиоды (сегменты) индикатора по битам.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjk0ODA2NTVdfQ==
+eyJoaXN0b3J5IjpbLTg4MzI1OTQ4OSwtMTUyOTQ4MDY1NV19
 -->
