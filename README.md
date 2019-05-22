@@ -6,6 +6,8 @@
 
 > Подробнее про установку библиотеки читайте в нашей [инструкции](https://wiki.iarduino.ru/page/Installing_libraries/).
 
+Пример подключения к Arduino/Piranha UNO с помощью Trema Shield
+![enter image description here](https://iarduino.ru/img/upload/6d5483e9fe8088a704239c91a4a8fcb1.png)
 
 | Модель | Ссылка на магазин|
 |--|--|
@@ -53,6 +55,5 @@
 
     Функция setLED( [[[[[ БАЙТ_№1 ] , БАЙТ_№2 ] , БАЙТ_№3 ] , БАЙТ_№4 ] , ФЛАГ ] ); // Устанавливает светодиоды (сегменты) индикатора по битам.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzI5MzAyMDUsLTE1Mjk0ODA2NTVdfQ
-==
+eyJoaXN0b3J5IjpbODQxNjMwNDA0LC0xNTI5NDgwNjU1XX0=
 -->
