@@ -1,7 +1,7 @@
 
-[![](https://iarduino.ru/img/logo.svg)](https://iarduino.ru) [![](https://wiki.iarduino.ru/img/git-shop.svg?2)](https://iarduino.ru)
-
-
+[![](https://iarduino.ru/img/logo.svg)](https://iarduino.ru) [![](https://wiki.iarduino.ru/img/git-shop.svg?3)](https://iarduino.ru)
+ [![](https://wiki.iarduino.ru/img/git-wiki.svg?2)](https://iarduino.ru)
+ [![](https://wiki.iarduino.ru/img/git-lesson.svg?2)](https://iarduino.ru) [![](https://wiki.iarduino.ru/img/git-forum.svg?2)](https://iarduino.ru)
 
 # iarduino_4LED
 Библиотека iarduino_4LED для работы с четырёхразрядным индикатором
@@ -52,5 +52,5 @@
 
     Функция setLED( [[[[[ БАЙТ_№1 ] , БАЙТ_№2 ] , БАЙТ_№3 ] , БАЙТ_№4 ] , ФЛАГ ] ); // Устанавливает светодиоды (сегменты) индикатора по битам.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMzQ2NTA0NV19
+eyJoaXN0b3J5IjpbLTY4MzIwNzA5MywxMDIzNDY1MDQ1XX0=
 -->
