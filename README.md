@@ -4,6 +4,9 @@
 # iarduino_4LED
 Библиотека iarduino_4LED для работы с четырёхразрядным индикатором
 
+> Подробнее про установку библиотеки читайте в нашей инструкции.
+
+
 | Модель | Ссылка на магазин|
 |--|--|
 | Красная ![enter image description here](https://wiki.iarduino.ru/img/resources/702/702.svg) | https://iarduino.ru/shop/Displei/chetyrehrazryadnyy-indikator-led-trema-modul.html|
@@ -50,5 +53,5 @@
 
     Функция setLED( [[[[[ БАЙТ_№1 ] , БАЙТ_№2 ] , БАЙТ_№3 ] , БАЙТ_№4 ] , ФЛАГ ] ); // Устанавливает светодиоды (сегменты) индикатора по битам.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MzI1OTQ4OSwtMTUyOTQ4MDY1NV19
+eyJoaXN0b3J5IjpbMzgwNjg1MzY4LC0xNTI5NDgwNjU1XX0=
 -->
