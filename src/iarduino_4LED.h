@@ -1,5 +1,5 @@
 //	Библиотека для работы с 4 разрядным LED индикатором: http://iarduino.ru/shop/Displei/chetyrehrazryadnyy-indikator-led-trema-modul.html
-//  Версия: 1.0.2
+//  Версия: 1.0.4
 //  Последнюю версию библиотеки Вы можете скачать по ссылке: http://iarduino.ru/file/266.html
 //  Подробное описание функции бибилиотеки доступно по ссылке: http://wiki.iarduino.ru/page/chetyrehrazryadnyy-indikator-trema-modul/
 //  Библиотека является собственностью интернет магазина iarduino.ru и может свободно использоваться и распространяться!
@@ -42,45 +42,63 @@ class iarduino_4LED{
 		void		light(    uint8_t i){LED_uintLIGHT=i; FUN_dispDATA();}					//	установка яркости от 0 до 7
 		void		point(    uint8_t=255,bool=0);											//	установка точек
 		void		setLED(   uint8_t=0,uint8_t=0,uint8_t=0,uint8_t=0,bool=0);				//	установка светодиодов по битам
-		void		print(    int16_t i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); if(VAR_uintTYP==TIME){FUN_printNumT(i,j1);}else{FUN_printNumI(i);}}
-		void		print(    int16_t i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
-		void		print(    int16_t i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
-		void		print(    int16_t i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
-		void		print(    int16_t i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
-		void		print(    int16_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
-		void		print(    int16_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
-		void		print(   uint16_t i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); if(VAR_uintTYP==TIME){FUN_printNumT(int16_t(i),j1);}else{FUN_printNumI(int16_t(i));}}
-		void		print(   uint16_t i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(   uint16_t i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(   uint16_t i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(   uint16_t i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(   uint16_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(   uint16_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(    int32_t i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); if(VAR_uintTYP==TIME){FUN_printNumT(int16_t(i),j1);}else{FUN_printNumI(int16_t(i));}}
-		void		print(    int32_t i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(    int32_t i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(    int32_t i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(    int32_t i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(    int32_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(    int32_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(   uint32_t i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); if(VAR_uintTYP==TIME){FUN_printNumT(int16_t(i),j1);}else{FUN_printNumI(int16_t(i));}}
-		void		print(   uint32_t i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(   uint32_t i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(   uint32_t i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(   uint32_t i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(   uint32_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(   uint32_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
-		void		print(     double i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); FUN_printNumF(i);}
-		void		print(     double i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
-		void		print(     double i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
-		void		print(     double i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
-		void		print(     double i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
-		void		print(     double i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
-		void		print(     double i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
-		void		print(      char *i){FUN_sortStyle(' ',255,255,255,255,255);                                                                                                             FUN_printNumS(i);}
-		void		print(const char *i){FUN_sortStyle(' ',255,255,255,255,255); char j[10]; j[9]=0; for(uint8_t k=0; k<9; k++){j[k]=i[k]; if(i[k]==0){k=10;}}                               FUN_printNumS(j);}
-		void		print(     String i){FUN_sortStyle(' ',255,255,255,255,255); char j[10]; j[9]=0; for(uint8_t k=0; k<9; k++){j[k]=i[k]; if(i[k]==0){k=10;}}                               FUN_printNumS(j);}
-		void		print(      int i[]){FUN_sortStyle(' ',255,255,255,255,255);                                                                                                             FUN_printNumA(i);}
+#ifdef RENESAS_CORTEX_M4
+		void		print(         int i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); if(VAR_uintTYP==TIME){FUN_printNumT(i,j1);}else{FUN_printNumI(i);}}
+		void		print(         int i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(         int i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(         int i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(         int i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(         int i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(         int i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(unsigned int i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); if(VAR_uintTYP==TIME){FUN_printNumT(int16_t(i),j1);}else{FUN_printNumI(int16_t(i));}}
+		void		print(unsigned int i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(unsigned int i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(unsigned int i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(unsigned int i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(unsigned int i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(unsigned int i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+#else
+		void		print(     int16_t i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); if(VAR_uintTYP==TIME){FUN_printNumT(i,j1);}else{FUN_printNumI(i);}}
+		void		print(     int16_t i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(     int16_t i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(     int16_t i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(     int16_t i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(     int16_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(     int16_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(i);}
+		void		print(    uint16_t i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); if(VAR_uintTYP==TIME){FUN_printNumT(int16_t(i),j1);}else{FUN_printNumI(int16_t(i));}}
+		void		print(    uint16_t i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(    uint16_t i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(    uint16_t i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(    uint16_t i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(    uint16_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(    uint16_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+#endif
+		void		print(     int32_t i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); if(VAR_uintTYP==TIME){FUN_printNumT(int16_t(i),j1);}else{FUN_printNumI(int16_t(i));}}
+		void		print(     int32_t i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(     int32_t i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(     int32_t i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(     int32_t i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(     int32_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(     int32_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(    uint32_t i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); if(VAR_uintTYP==TIME){FUN_printNumT(int16_t(i),j1);}else{FUN_printNumI(int16_t(i));}}
+		void		print(    uint32_t i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(    uint32_t i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(    uint32_t i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(    uint32_t i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(    uint32_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(    uint32_t i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumI(int16_t(i));}
+		void		print(      double i,          int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle('0',j1,j2,j3,j4,j5); FUN_printNumF(i);}
+		void		print(      double i, char j0, int j1=255,          int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
+		void		print(      double i,          int j1    , char j0, int j2=255,          int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
+		void		print(      double i,          int j1    ,          int j2    , char j0, int j3=255,          int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
+		void		print(      double i,          int j1    ,          int j2    ,          int j3    , char j0, int j4=255,          int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
+		void		print(      double i,          int j1    ,          int j2    ,          int j3    ,          int j4    , char j0, int j5=255        ){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
+		void		print(      double i,          int j1    ,          int j2    ,          int j3    ,          int j4    ,          int j5,    char j0){FUN_sortStyle( j0,j1,j2,j3,j4,j5); FUN_printNumF(i);}
+		void		print(       char *i){FUN_sortStyle(' ',255,255,255,255,255);                                                                                                             FUN_printNumS(i);}
+		void		print( const char *i){FUN_sortStyle(' ',255,255,255,255,255); char j[10]; j[9]=0; for(uint8_t k=0; k<9; k++){j[k]=i[k]; if(i[k]==0){k=10;}}                               FUN_printNumS(j);}
+		void		print(      String i){FUN_sortStyle(' ',255,255,255,255,255); char j[10]; j[9]=0; for(uint8_t k=0; k<9; k++){j[k]=i[k]; if(i[k]==0){k=10;}}                               FUN_printNumS(j);}
+		void		print(       int i[]){FUN_sortStyle(' ',255,255,255,255,255);                                                                                                             FUN_printNumA(i);}
+		void		print( const int i[]){FUN_sortStyle(' ',255,255,255,255,255);                                                                                                             FUN_printNumA((int*)i);}
 	private:
 	/**	внутренние функции **/
 		void		FUN_dispDATA	(uint8_t,uint8_t);			//	вывести значение uint8_t, в позицию uint8_t

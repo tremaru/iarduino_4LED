@@ -154,6 +154,7 @@ uint8_t	iarduino_4LED::FUN_segmCODE(char i){
 				case 'l': case 'L':				return 0x38;	break;
 				case 'n': case 'N':				return 0x54;	break;
 				case 'p': case 'P':				return 0x73;	break;
+				case 'r': case 'R':				return 0x50;	break;
 				case 't': case 'T':				return 0x78;	break;
 				case 'u': case 'U':				return 0x3E;	break;
 				case '-':						return 0x40;	break;
