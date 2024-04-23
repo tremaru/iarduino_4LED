@@ -1,7 +1,7 @@
 
 [![](https://iarduino.ru/img/logo.svg)](https://iarduino.ru)[![](https://wiki.iarduino.ru/img/git-shop.svg?3)](https://iarduino.ru) [![](https://wiki.iarduino.ru/img/git-wiki.svg?2)](https://wiki.iarduino.ru) [![](https://wiki.iarduino.ru/img/git-lesson.svg?2)](https://lesson.iarduino.ru)[![](https://wiki.iarduino.ru/img/git-forum.svg?2)](http://forum.trema.ru)
 
-# iarduino\_4LED [СКАЧАТЬ](https://github.com/tremaru/iarduino_4LED/archive/1.0.0.zip)
+# iarduino\_4LED
 Библиотека iarduino\_4LED для работы с четырёхразрядным индикатором
 
 > Подробнее про установку библиотеки читайте в нашей [инструкции](https://wiki.iarduino.ru/page/Installing_libraries/).
