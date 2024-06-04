@@ -1,5 +1,5 @@
 //	Библиотека для работы с 4 разрядным LED индикатором: http://iarduino.ru/shop/Displei/chetyrehrazryadnyy-indikator-led-trema-modul.html
-//  Версия: 1.0.5
+//  Версия: 1.0.6
 //  Последнюю версию библиотеки Вы можете скачать по ссылке: http://iarduino.ru/file/266.html
 //  Подробное описание функции бибилиотеки доступно по ссылке: http://wiki.iarduino.ru/page/chetyrehrazryadnyy-indikator-trema-modul/
 //  Библиотека является собственностью интернет магазина iarduino.ru и может свободно использоваться и распространяться!
